@@ -1,0 +1,19 @@
+.jiandao{
+    position: relative;
+    left: 500px;
+    top: 500px;
+}
+.jiandao_radio{
+    position: absolute;
+    left: 65px;
+}
+.stone{
+    position: absolute;
+    left: 800px;
+    top: 500px;
+}
+.bu{
+    position: absolute;
+    left: 1200px;
+    top: 500px;
+}
