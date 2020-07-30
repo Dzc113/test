@@ -18,6 +18,7 @@
 
         </style>
         <script type="text/javascript">
+        //页面加载完成后，再加载script
         window.onload = function(){
             var prev = document.getElementById("prev");
             var next = document.getElementById("next");
@@ -27,7 +28,7 @@
             prev.onclick = function(){
                 index--;
                 if(index<0){
-                    index = 2;
+                    index = photoArry.length-1;
                 }
                 img.src = photoArry[index];
 
