@@ -25,6 +25,27 @@
                     items[i].checked = false;
                 }   
             })
+            //3.反选 checkedRevBtn
+            myClick("checkedRevBtn",function(){
+                var items = document.getElementsByName("items");
+                for(var i = 0;i < items.length;i++){
+                    //*注意if判断时候 ==和=的区别
+                    if(items[i].checked == true){
+                        items[i].checked = false;
+                    }else if(items[i].checked == false){
+                        items[i].checked = true;
+                    }
+                }
+            })
+            //4.提交 sendBtn
+            myClick("sendBtn",function(){
+                var items = document.getElementsByName("items");
+                for(var i = 0;i < items.length;i++){
+                    if(items[i].checked == true){
+                        alert(items[i].value +"提交成功");
+                    }
+                }
+            })
 
         }
         
